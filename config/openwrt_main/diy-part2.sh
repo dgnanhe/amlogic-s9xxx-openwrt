@@ -40,6 +40,8 @@ else
     echo "# CONFIG_CCACHE is not set" >>.config
     echo 'CONFIG_CCACHE_DIR=""' >>.config
 fi
+sed -i 's/download-ci-llvm = true/download-ci-llvm = "if-unchanged"/' \
+rustc-*/src/bootstrap/config.toml
 #
 # ------------------------------- Main source ends -------------------------------
 
