@@ -40,7 +40,6 @@ else
     echo "# CONFIG_CCACHE is not set" >>.config
     echo 'CONFIG_CCACHE_DIR=""' >>.config
 fi
-#sed -i 's/download-ci-llvm = true/download-ci-llvm = false/g' build_dir/target-aarch64_generic_musl/host/rustc-1.90.0-src/bootstrap.toml
 #
 # ------------------------------- Main source ends -------------------------------
 
