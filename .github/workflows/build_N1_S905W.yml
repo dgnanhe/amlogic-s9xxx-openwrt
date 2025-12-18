@@ -15,7 +15,7 @@ on:
         default: "immortalwrt_openwrt-24.10"
         type: choice
         options:
-          - openwrt_main
+          - openwrt_openwrt-24.10
           - immortalwrt_openwrt-24.10
           - lede_master
       openwrt_board:
