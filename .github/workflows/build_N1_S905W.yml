@@ -15,8 +15,10 @@ on:
         default: "immortalwrt_openwrt-25.12"
         type: choice
         options:
+          - openwrt_main
           - openwrt_openwrt-25.12
           - openwrt_openwrt-24.10
+          - immortalwrt_master
           - immortalwrt_openwrt-25.12
           - immortalwrt_openwrt-24.10
           - lede_master
