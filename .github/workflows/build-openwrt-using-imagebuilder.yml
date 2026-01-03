@@ -18,19 +18,20 @@ on:
         default: "immortalwrt:24.10.4"
         type: choice
         options:
+          - openwrt:24.10.5
           - openwrt:24.10.4
-          - openwrt:24.10.3
           - immortalwrt:24.10.4
           - immortalwrt:24.10.3
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "s905d_s905w"
+        default: "s905_s905w"
         type: choice
         options:
           - all
-          - top55
-          - after55
+          - first55
+          - from55
+          - last20
           - a311d-oes_s922x-oes-plus_wxy-oect
           - nsy-g16-plus_nsy-g68-plus_bdy-g18-pro
           - s905d_s905x3_s912_s922x-ct2000
@@ -54,7 +55,7 @@ on:
           - fine3399
           - firefly-rk3399
           - fmx1-pro
-          - jp-tvbox
+          - gzpeite-p01
           - h28k
           - h66k
           - h68k
@@ -65,6 +66,7 @@ on:
           - hs530r
           - hugsun-x99
           - ipc-r
+          - jp-tvbox
           - king3399
           - kylin3399
           - lckfb-tspi
@@ -87,10 +89,10 @@ on:
           - rock5b
           - rock5c
           - ruisen-box
-          - s905
+          - s905_s905w
           - s905-beelink-mini
           - s905-mxqpro-plus
-          - s905d_s905w
+          - s905d
           - s905d-ki-pro
           - s905d-sml5442tw
           - s905l
@@ -257,7 +259,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Initialization environment
         id: init
