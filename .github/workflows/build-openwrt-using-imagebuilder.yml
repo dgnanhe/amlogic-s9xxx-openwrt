@@ -239,12 +239,12 @@ on:
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
-        default: "ophub"
+        default: "tuhaiyang"
         type: choice
         options:
           - ophub
           - angel
-          - yourname
+          - tuhaiyang
 
 env:
   TZ: Etc/UTC
