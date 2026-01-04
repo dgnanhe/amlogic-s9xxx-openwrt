@@ -68,3 +68,5 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/l
 # 移除 openwrt feeds 过时的luci版本
 # rm -rf feeds/luci/applications/luci-app-passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
+rm -rf feeds/packages/net/v2ray-geodata
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
