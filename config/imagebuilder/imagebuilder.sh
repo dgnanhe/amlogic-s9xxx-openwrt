@@ -133,7 +133,7 @@ custom_packages() {
 
     luci_packages_api="https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_cortex-a53/luci/"
     luci_packages_plugin="luci-app-openclash"
-    luci_packages_plugin_down="$(curl -s ${luci_packages_api} ${luci_packages_plugin}.*.ipk" | head -n 1)"
+    luci_packages_plugin_down="$(curl -s ${luci_packages_api} ${luci_packages_plugin}.*.ipk")"
     curl -fsSOJL ${luci_packages_plugin_down}
     [[ "${?}" -eq "0" ]] || error_msg "[ ${luci_packages_plugin} ] download failed!"
     echo -e "${INFO} The [ ${luci_packages_plugin} ] is downloaded successfully."
