@@ -131,7 +131,7 @@ custom_packages() {
     [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_i18n} ] download failed!"
     echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
 
-    luci_packages_api="https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_cortex-a53/luci/"
+    luci_packages_api="https://downloads.immortalwrt.org/releases/24.10.4/packages/aarch64_cortex-a53/luci"
     luci_packages_plugin="luci-app-openclash"
     luci_packages_plugin_down="$(curl -s ${luci_packages_api} | grep -oE "https.*${luci_packages_plugin}.*.ipk" | head -n 1)"
     curl -fsSOJL ${luci_packages_plugin_down}
