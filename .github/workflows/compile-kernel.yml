@@ -75,7 +75,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-tuhaiyang"
+        default: "-ophub"
         type: choice
         options:
           - -ophub
