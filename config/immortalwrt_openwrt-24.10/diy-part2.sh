@@ -59,8 +59,6 @@ rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/luci/themes/luci-theme-openwrt-2020
 rm -rf feeds/luci/themes/luci-theme-openwrt
-rm -rf package/feeds/packages/python-pysocks
-rm -rf package/feeds/packages/python-unidecode
 # Add packages
 #添加argon主题
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
